@@ -65,8 +65,8 @@ print(classmates)
 
 #create a of list all the marvel movies from Iron Man to Endgame 
 #go through the list and create a second list with all the titles that have "The"
-
-marvelMovies = ['Iron Man', 'Iron Man 2', 'The Incredible Hulk', 'Thor', 'Captain America I', 'Avengers', 'Iron Man 3', 'Thor: Dark World', 'Cap America II', 'Guardians of the Galaxy', 'Avengers II', 'Ant Man', 'Civil War', 'Dr. Strange', 'Guardians of the Galaxy II', 'Spider Man: Homecoming', 'Thor Ragnarok', 'Black Panther', 'Avengers: Infinity War', 'Ant Man II', 'Captain Marvel', 'Avengers Endgame'] 
+'''
+marvelMovies = ['Iron Man', 'Iron Man 2', 'The Incredible Hulk', 'Thor', 'Captain America: The First Avenger', 'The Avengers', 'Iron Man 3', 'Thor: Dark World', 'Cap America: The Winter Soldier', 'Guardians of the Galaxy', 'Avengers: Age of Ultron', 'Ant Man', 'Captain America: Civil War', 'Dr. Strange', 'Guardians of the Galaxy II', 'Spider Man: Homecoming', 'Thor Ragnarok', 'Black Panther', 'Avengers: Infinity War', 'Ant Man and The Wasp', 'Captain Marvel', 'Avengers Endgame'] 
 
 theMovie = []
 
@@ -74,7 +74,25 @@ for index, movie in enumerate(marvelMovies):
     if 'the ' in movie.lower(): 
         theMovie.append(movie)
 
-print(theMovie) 
+print(theMovie)
+
+#get index of a list 
+
+for index in range(len(marvelMovies)): 
+        print(index)
+''' 
+#reverse string example
+#strings are immutable
+my_string = 'This is a sentence'
+reversed_string = '' 
+for i in range(len(my_string) - 1, - 1, - 1): 
+        reversed_string += my_string[i] 
+
+print(reversed_string)
+
+
+
+
     
 
 
